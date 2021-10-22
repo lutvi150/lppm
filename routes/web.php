@@ -20,8 +20,8 @@ use App\http\Controllers\MajalahinternalController;
 |
 */
 
-Route::get('/', [PagesController::class, 'home']);
-Route::view('/design', 'newTemplate.home');
+// Route::get('/', [PagesController::class, 'home']);
+Route::view('/', 'homepage');
 Route::get('/sejarahsingkat', [PagesController::class, 'sejarahsingkat']);
 Route::get('/visimisi', [PagesController::class, 'visimisi']);
 Route::get('/kontak', [PagesController::class, 'kontak']);

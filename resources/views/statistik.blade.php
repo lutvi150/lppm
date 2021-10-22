@@ -1,4 +1,4 @@
-@extends('template/template')
+@extends('newTemplate.home')
 
 @section('title','Statistik | LPPM UDINUS')
 
@@ -98,10 +98,14 @@
 @endsection
 
 @section('container')
-
-<div class="container mt-5" style="padding-top:50px">
-    <h1 class="text-center">STATISTIKA</h1>
-    <hr>
+<div class="col-md-8 content">
+    <div class="box">
+        <div class="container-fluid">
+            <div class="box-title">
+                <h3 class="title"><strong>Statistik</strong></h3>
+            </div>
+            <div class="box-body slice table-responsive">
+                
     <div class="row">
         <div class="col-md-6">
             <figure class="highcharts-figure text-center">
@@ -147,15 +151,10 @@
             </figure>
         </div>
     </div>
+            </div>
+        </div>
+    </div>
 </div>
-
-
-
-
-
-
-
-
 @endsection
 
 @push('js')
